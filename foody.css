@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Dancing+Script&family=Lobster&family=Yellowtail&display=swap');
+
+*{
+
+    font-family: 'Lobster', cursive;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+.main{
+    width: 100%;
+}
+nav{
+    width: 100%;
+    padding: 0px 100px;
+    line-height: 80px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.logo a{
+    font-size: 39px;
+    color: rgb(165, 62, 6);
+    font-weight: bold;
+    margin-left: 100px;
+}
+a{
+    text-decoration: none;
+    color: rgb(252, 244, 244);
+    font-size: 18px;
+    transition: 0.5s all ease;
+
+}
+ul{
+    margin: 0px;
+    margin-right: 100px;
+}
+ul li{
+    display: flex;
+    float: left;
+    padding: 0px 10px;
+    list-style: none;
+}
+ul li a:hover{
+    
+    color: red;
+
+}
+.header{
+    background-image: url(./GettyImages-AlexanderLabut.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: rgb(234, 223, 223);
+    text-align: center;
+    background: rgb(0, 0, 0,0.5);
+}
+.content h1{
+    font-size: 50px;
+    color: rgb(230, 76, 106);
+}
+.content p{
+    padding: 0px 50px;
+    font-size: 20px;
+}
+button{
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 25px;
+    border-radius: 6px;
+    transition: 0.5s all ease;
+}
+button:hover{
+    background: black;
+    color: #ed0a0a;
+}
+.overlay{
+    background: rgb(0, 0, 0,0.7);
+    height: 100vh;
+}
+.items{
+    margin-right: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 0.8rem;
+    margin-top: 3rem;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;
+    border-radius: 12px;
+    height: 100%;
+
+}
+.item img{
+    width: 70%;
+    height: 200px;
+    text-align: center;
+}
+/* .item{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+} */
+/* .item img:hover{
+    transform: scale(1.04);
+}
+.item h3{
+    color: rgb(183, 71, 12);
+    padding: 5px;
+    text-align: center;
+}
+.item button{
+    padding: 5px 30px;
+    border: none;
+    outline: none;
+    background-color: rgb(6, 5, 5);
+    color: rgb(196, 199, 9);
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    transition: 0.2s all;
+}
+.item button:hover{
+    transform: scale(1.08);
+}  */
+@media screen and (max-width:100px){
+    .items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}    
+@media screen and (max-width:768px){
+    .items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+} 
+.images{
+    height: 80%;
+    width: 45%;
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+}
+#about{
+    margin-left: 8%;
+    margin-top: 15%;
+    margin-right: 8%;
+}
+.heading{
+    text-align: center;
+}
+.heading h2{
+    font-size: 30px;
+}
+.heading span{
+    font-size: 20px;
+    color: rgb(173, 74, 4);
+}
+/* 1rem=16px */
+.about-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.about-img img{
+    width: 550px;
+    height: 500px;
+    border-radius: 2rem;
+}
+.about-text{
+    font-size: 20px;
+    font-weight: 700px;
+    t
